@@ -17,5 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[HomeController::class, 'index']);
 Route::get('contact',[HomeController::class, 'contact']);
 Route::get('about', [HomeController::class, 'about']);
-Route::get('blog-grid-left-sidebar', [HomeController::class,'blog-grid-left-sidebar']);
-Route::get('blog-single-left-sidebar',  );
+Route::get('blog/{{$id}}', [HomeController::class,'blog']);
+Route::get('cotegories/{$id}',[HomeController::class, 'blog_cotegories']);
+// Route::get('aboute_items', [HomeController::class, 'aboute_items']);

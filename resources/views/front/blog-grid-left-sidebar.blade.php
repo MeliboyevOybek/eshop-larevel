@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('front.layouts.app')
 
 
 @section('content')
@@ -11,7 +11,7 @@
                 <div class="col-12">
                     <ul class="page-breadcrumb__menu">
                         <li class="page-breadcrumb__nav"><a href="#">Home</a></li>
-                        <li class="page-breadcrumb__nav active">Blog Grid Left Sidebar Page</li>
+                        <li class="page-breadcrumb__nav active"></li>
                     </ul>
                 </div>
             </div>
@@ -65,14 +65,14 @@
                                         </div>
                                     </a>
                                     <div class="sidebar__post-content">
-                                        <a class="link--gray" href="">This Is First Post For XipBlog</a>
-                                        <span class="d-block color-gray">APRIL 24, 2020</span>
+                                        <a class="link--gray" href="{{$blog->title}}"></a>
+                                        <span class="d-block color-gray">{{$blog->data}}</span>
                                     </div>
                                 </li>
                                 <li class="d-flex align-items-center">
                                     <a class="sidebar__post-img" href="#">
                                         <div class="img-responsive">
-                                            <img src="assets/img/product/size-small/product-home-1-img-2.jpg" alt="">
+                                            <img src="{{$blog->image}}" alt="">
                                         </div>
                                     </a>
                                     <div class="sidebar__post-content">

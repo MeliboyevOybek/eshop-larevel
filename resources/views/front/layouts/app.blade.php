@@ -13,17 +13,17 @@
     <!-- ::::::::::::::All CSS Files here :::::::::::::: -->
 
     <!-- Vendor CSS Files -->
-    <link rel="stylesheet" href="assets/css/vendor/jquery-ui.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/vendor/plaza-icon.css">
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/jquery-ui.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/plaza-icon.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/bootstrap.min.css') }}">
 
     <!-- Plugin CSS Files -->
-    <link rel="stylesheet" href="assets/css/plugin/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/plugin/material-scrolltop.css">
-    <link rel="stylesheet" href="assets/css/plugin/price_range_style.css">
-    <link rel="stylesheet" href="assets/css/plugin/in-number.css">
-    <link rel="stylesheet" href="assets/css/plugin/venobox.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugin/swiper.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugin/material-scrolltop.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugin/price_range_style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugin/in-number.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugin/venobox.min.css') }}">
 
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
     <!-- <link rel="stylesheet" href="assets/css/vendor/vendor.min.css"/>
@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="assets/css/main.min.css"> -->
 
     <!-- Main Style CSS File -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
 </head>
 
 <body>
@@ -343,7 +343,7 @@
                                     <a href="#" class="header__nav-link">Pages <i class="icon-chevron-down"></i></a>
                                     <!--Single Dropdown Menu-->
                                     <ul class="dropdown__menu pos-absolute">
-                                        <li class="dropdown__list"><a href="about.html" class="dropdown__link">About</a></li>
+                                        <li class="dropdown__list"><a href="{{url('about')}}" class="dropdown__link">About</a></li>
                                         <li class="dropdown__list"><a href="cart.html" class="dropdown__link">Cart</a></li>
                                         <li class="dropdown__list"><a href="checkout.html" class="dropdown__link">Checkout</a></li>
                                         <li class="dropdown__list"><a href="compare.html" class="dropdown__link">Compare</a></li>
@@ -475,7 +475,7 @@
                                         <li class="dropdown__list">
                                             <a href="#" class="dropdown__link">Blog Grid</a>
                                             <ul class="dropdown__submenu pos-absolute">
-                                                <li class="dropdown__submenu-list"><a href="blog-grid-left-sidebar.html" class="dropdown__submenu-link"> Blog Grid Left Sidebar</a></li>
+                                                <li class="dropdown__submenu-list"><a href="{{url('blog')}}" class="dropdown__submenu-link"> Blog Grid Left Sidebar</a></li>
                                                 <li class="dropdown__submenu-list"><a href="blog-grid-right-sidebar.html" class="dropdown__submenu-link"> Blog Grid Right Sidebar</a></li>
                                             </ul>
                                         </li>
@@ -499,7 +499,7 @@
 
                                 <!--Start Single Nav link-->
                                 <li class="header__nav-item pos-relative">
-                                     <a href="contact.html" class="header__nav-link">Contact Us</a>
+                                     <a href="{{url('contact')}}" class="header__nav-link">Contact Us</a>
                                 </li> <!-- End Single Nav link-->
                             </ul>
                         </nav>
@@ -995,7 +995,7 @@
     </header> <!-- ::::::  End  Header Section  ::::::  -->      
 
     @yield('content')
-    
+
     <!-- ::::::  Start  Footer Section  ::::::  -->
     <footer class="footer">
         <div class="footer__top gray-bg p-tb-100">
@@ -1181,19 +1181,19 @@
     <!-- ::::::::::::::All Javascripts Files here ::::::::::::::-->
 
     <!-- Vendor JS Files -->
-    <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
-    <script src="assets/js/vendor/jquery-ui.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.bundle.js"></script>
+    <script src="{{ asset('assets/js/vendor/jquery-3.5.1.min.') }})"></script>
+    <script src="{{ asset('assets/js/vendor/modernizr-3.7.1.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery-ui.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/bootstrap.bundle.js') }}"></script>
 
     <!-- Plugins JS Files -->
-    <script src="assets/js/plugin/swiper.min.js"></script>
-    <script src="assets/js/plugin/jquery.countdown.min.js"></script>
-    <script src="assets/js/plugin/material-scrolltop.js"></script>
-    <script src="assets/js/plugin/price_range_script.js"></script>
-    <script src="assets/js/plugin/in-number.js"></script>
-    <script src="assets/js/plugin/jquery.elevateZoom-3.0.8.min.js"></script>
-    <script src="assets/js/plugin/venobox.min.js"></script>
+    <script src="{{ asset('assets/js/plugin/swiper.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugin/jquery.countdown.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugin/material-scrolltop.js') }}"></script>
+    <script src="{{ asset('assets/js/plugin/price_range_script.js') }}"></script>
+    <script src="{{ asset('assets/js/plugin/in-number.js') }}"></script>
+    <script src="{{ asset('assets/js/plugin/jquery.elevateZoom-3.0.8.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugin/venobox.min.js') }}"></script>
 
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
     <!-- <script src="assets/js/vendor/vendor.min.js"></script>

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('front.layouts.app')
 
 
 @section('content')
@@ -34,8 +34,8 @@
                                 <i class="fas fa-phone-alt"></i>
                             </div>
                             <div class="contact-info-dec">
-                                <a href="tel://+012-345-678-102">+012 345 678 102</a>
-                                <a href="tel://+012-345-678-102">+012 345 678 102</a>
+                                <a href="tel://+012-345-678-102">{{$contacts->phone1}}</a>
+                                <a href="tel://+012-345-678-102">{{$contacts->phone2}}</a>
                             </div>
                         </div>
                         <div class="single-contact-info">
@@ -43,8 +43,8 @@
                                 <i class="fas fa-globe-asia"></i>
                             </div>
                             <div class="contact-info-dec">
-                                <a href="mailto://urname@email.com">urname@email.com</a>
-                                <a href="mailto://urwebsitenaem.com">urwebsitenaem.com</a>
+                                <a href="mailto://urname@email.com">{{$contacts->email1}}</a>
+                                <a href="mailto://urwebsitenaem.com">{{$contacts->email2}}</a>
                             </div>
                         </div>
                         <div class="single-contact-info">
@@ -52,8 +52,7 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="contact-info-dec">
-                                <span>Address goes here,</span>
-                                <span>street, Crossroad 123.</span>
+                                <span>{{$contacts->address}}</span>
                             </div>
                         </div>
                         <div class="contact-social m-t-40">
